@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Isso garante que a largura e altura dos elementos incluam o preenchimento e a borda, mas não a margem */
+}
+
+.container-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  background: powderblue;
+}
+.login-form {
+  width: 30%;
+  height: 450px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgb(24, 27, 80);
+  border-radius: 20px;
+}
