@@ -2,12 +2,26 @@
 
 Este é um sistema simples de chamados, onde você pode abrir seus chamados e consultá-los.
 
+![image](https://github.com/Viniicius98/Sistema-de-Chamados/assets/91093655/30497456-e893-4c54-a91d-dd82db269fc1)
+
+
 ## Funcionalidades
 
 - Registro de usuário
+  ![image](https://github.com/Viniicius98/Sistema-de-Chamados/assets/91093655/196eeef0-977e-47e4-bc98-7df180343b62)
+
 - Login de usuário
+![image](https://github.com/Viniicius98/Sistema-de-Chamados/assets/91093655/4c50d816-553a-40be-9a34-c9c7c34fd3bc)
+
 - Abertura de chamados
+
+![image](https://github.com/Viniicius98/Sistema-de-Chamados/assets/91093655/3552c234-f046-40c0-b8a3-7fda840007b4)
+
+
 - Consulta de chamados
+
+  ![image](https://github.com/Viniicius98/Sistema-de-Chamados/assets/91093655/e025e44d-b571-4186-bd0e-d470a103a040)
+
 
 ## Tecnologias Utilizadas
 
@@ -15,35 +29,13 @@ Este é um sistema simples de chamados, onde você pode abrir seus chamados e co
 - JavaScript
 - Bootstrap
 
-## Capturas de Tela
-
-### Página de Login
-
-![Página de Login](images/login-page.png)
-
-### Página de Registro
-
-![Página de Registro](images/register-page.png)
-
-### Página de Abertura de Chamado
-
-![Página de Abertura de Chamado](images/open-ticket-page.png)
-
-### Página de Consulta de Chamados
-
-![Página de Consulta de Chamados](images/view-tickets-page.png)
-
 ## Como Usar
 
 1. Clone este repositório.
 2. Configure seu ambiente PHP.
-3. Importe o banco de dados fornecido (`database.sql`).
-4. Execute o servidor PHP.
-5. Acesse o sistema em seu navegador.
+3. Execute o servidor PHP.
+4. Acesse o sistema em seu navegador.
 
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request ou relatar um problema.
 
 ## Licença
 
