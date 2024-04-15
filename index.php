@@ -34,14 +34,14 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-6 d-flex flex-column align-items-center">
-                                    <a href="cadastrar.php">
-                                        <img src="../public/img/cadastrar.png" width="70" height="70">
+                                    <a href="views/cadastrar.php">
+                                        <img src="public/img/cadastrar.png" width="70" height="70">
                                     </a>
                                     <p><b>Cadastrar</b></p>
                                 </div>
                                 <div class="col-6 d-flex flex-column align-items-center">
-                                    <a href="login.php">
-                                        <img src="../public/img/login.png" width="70" height="70">
+                                    <a href="views/login.php">
+                                        <img src="public/img/login.png" width="70" height="70">
                                     </a>
                                     <p><b>Login</b></p>
                                 </div>
