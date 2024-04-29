@@ -29,10 +29,17 @@ Este é um sistema simples de chamados, onde você pode abrir seus chamados e co
 
 ## Como Usar
 
-1. Clone este repositório.
-2. Configure seu ambiente PHP.
-3. Execute o servidor PHP.
-4. Acesse o sistema em seu navegador.
+1. **Clone este repositório**:
+   Faça uma cópia deste repositório para sua máquina local. Você pode fazer isso usando o comando `git clone` seguido do URL do repositório.
+
+2. **Configure seu ambiente PHP**:
+   Certifique-se de que seu ambiente PHP esteja configurado corretamente. Isso geralmente envolve instalar o PHP e configurar as variáveis de ambiente. Consulte a [documentação do PHP](https://www.php.net/manual/pt_BR/install.php) para obter instruções específicas para o seu sistema operacional.
+
+3. **Execute o servidor PHP**:
+   Para iniciar o servidor PHP, use o comando `php -S localhost:8080`. Isso fará com que o servidor escute na porta 8080 do localhost.
+
+4. **Acesse o sistema em seu navegador**:
+   Abra seu navegador da web e acesse `http://localhost:8080` para visualizar o sistema em funcionamento.
 
 ## Licença
 
