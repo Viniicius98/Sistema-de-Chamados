@@ -1,0 +1,45 @@
+name: CI/CD Pipeline PHP
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do Código
+        uses: actions/checkout@v2
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.1" # Escolha a versão PHP usada no projeto
+          extensions: mbstring, intl, pdo, mysql
+
+      - name: Instalar Dependências (Composer)
+        run: composer install --prefer-dist --no-progress
+
+      - name: Executar Testes Unitários
+        run: vendor/bin/phpunit
+
+  deploy:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Deploy para Servidor
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+        run: |
+          echo "${SSH_KEY}" > private_key.pem
+          chmod 600 private_key.pem
+          rsync -r --delete-after -e "ssh -i private_key.pem" ./ \
+          $SSH_USER@$SSH_HOST:/var/www/seu_projeto

@@ -1,0 +1,17 @@
+<?php
+use PHPUnit\Framework\TestCase;
+
+class ExampleTest extends TestCase
+{
+    public function testSoma()
+    {
+        $resultado = 1 + 1;
+        $this->assertEquals(2, $resultado, 'A soma de 1 + 1 deveria ser 2');
+    }
+
+    public function testMultiplicacao()
+    {
+        $resultado = 2 * 3;
+        $this->assertEquals(6, $resultado, 'A multiplicação de 2 * 3 deveria ser 6');
+    }
+}
